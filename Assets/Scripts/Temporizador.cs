@@ -11,10 +11,28 @@ public class Temporizador : MonoBehaviour
 
     public float cuenta = 0;
 
+    // Lista para almacenar los prefabs
+    public GameObject[] prefabs;
+
     void Start()
     {
-        // Llama a la función 'NuevoPedido' cada 2 segundos, después de 0 segundos de retraso.
-        InvokeRepeating("NuevoPedido", 0f, 2f);
+        // Encontrar todos los objetos con la etiqueta "objeto"
+        GameObject[] objetosConEtiqueta = GameObject.FindGameObjectsWithTag("Objeto");
+
+        // Crear un array de objetos para almacenar las instancias
+        GameObject[] arrayDeObjetos = new GameObject[objetosConEtiqueta.Length];
+
+        // Copiar las instancias al array
+        for (int i = 0; i < objetosConEtiqueta.Length; i++)
+        {
+            arrayDeObjetos[i] = objetosConEtiqueta[i];
+        }
+
+        // Imprimir los nombres de los objetos en el array
+        foreach (GameObject objeto in arrayDeObjetos)
+        {
+            Debug.Log("Nombre del objeto: " + objeto.name);
+        }
     }
 
 

@@ -358,6 +358,7 @@
 "Assets/Scripts/ControlObjeto.cs"
 "Assets/Scripts/Jugador.cs"
 "Assets/Scripts/Jugador2.cs"
+"Assets/Scripts/MesaEntrega.cs"
 "Assets/Scripts/Temporizador.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
