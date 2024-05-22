@@ -10,6 +10,8 @@ TagManager:
   - Cofre2
   - Cofre3
   - Cofre4
+  - Entregado
+  - Limpiando
   layers:
   - Default
   - TransparentFX

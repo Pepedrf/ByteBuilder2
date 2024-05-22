@@ -58,8 +58,10 @@ public class CogerObjeto : MonoBehaviour
 
                 // Habilitar la gravedad y la física del objeto
                 Rigidbody pickedObjectRigidbody = pickedObject.GetComponent<Rigidbody>();
+                Collider collider = pickedObject.GetComponent<Collider>();
                 pickedObjectRigidbody.useGravity = true;
                 pickedObjectRigidbody.isKinematic = false;
+                collider.enabled = true;
 
                 // Si hay un bloque cercano, hacer que el objeto suelto sea hijo de ese bloque
                 if (bloqueCercano != null)
@@ -103,8 +105,10 @@ public class CogerObjeto : MonoBehaviour
 
                             // Desactivar la gravedad del objeto recogido
                             Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                            Collider collider = pickedObject.GetComponent<Collider>();
                             pickedRigidbody.useGravity = false;
                             pickedRigidbody.isKinematic = true;
+                            collider.enabled = false;
 
                             // Salir del bucle una vez que se haya encontrado y recogido un objeto cercano
                             break;
@@ -123,8 +127,10 @@ public class CogerObjeto : MonoBehaviour
 
                         // Desactivar la gravedad del objeto recogido
                         Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                        Collider collider = pickedObject.GetComponent<Collider>();
                         pickedRigidbody.useGravity = false;
                         pickedRigidbody.isKinematic = true;
+                        collider.enabled = false;
                     }
 
                     // Si no se encontró ningún objeto cercano, instanciar uno nuevo en la UbicacionCoger
@@ -135,9 +141,12 @@ public class CogerObjeto : MonoBehaviour
 
                         dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
 
+                        // Desactivar la gravedad del objeto recogido
                         Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                        Collider collider = pickedObject.GetComponent<Collider>();
                         pickedRigidbody.useGravity = false;
                         pickedRigidbody.isKinematic = true;
+                        collider.enabled = false;
                     }
                     else if (pickedObject == null && nearChest3)
                     {
@@ -146,9 +155,12 @@ public class CogerObjeto : MonoBehaviour
 
                         dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
 
+                        // Desactivar la gravedad del objeto recogido
                         Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                        Collider collider = pickedObject.GetComponent<Collider>();
                         pickedRigidbody.useGravity = false;
                         pickedRigidbody.isKinematic = true;
+                        collider.enabled = false;
                     }
                     else if (pickedObject == null && nearChest4)
                     {
@@ -156,10 +168,12 @@ public class CogerObjeto : MonoBehaviour
                         pickedObject.transform.SetParent(UbicacionCoger.transform);
 
                         dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
-
+                        // Desactivar la gravedad del objeto recogido
                         Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                        Collider collider = pickedObject.GetComponent<Collider>();
                         pickedRigidbody.useGravity = false;
                         pickedRigidbody.isKinematic = true;
+                        collider.enabled = false;
                     }
                 }
             }
