@@ -356,6 +356,7 @@
 "Assets/Scripts/BarraProgreso.cs"
 "Assets/Scripts/Basura.cs"
 "Assets/Scripts/Caja.cs"
+"Assets/Scripts/CambiarNivel.cs"
 "Assets/Scripts/CogerObjeto.cs"
 "Assets/Scripts/ControlObjeto.cs"
 "Assets/Scripts/Jugador.cs"
