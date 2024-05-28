@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 5759593277793420947}
   - component: {fileID: -1509297455399169132}
   - component: {fileID: 5404844298019614265}
+  - component: {fileID: 276517228357479485}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Objeto
@@ -183,8 +184,19 @@ MonoBehaviour:
   UbicacionProcesador: {fileID: 2112991552034501573}
   UbicacionGrafica: {fileID: 7136554626566914528}
   UbicacionRam: {fileID: 5452954778683736046}
-  UbicacionLimpieza: {fileID: 0}
-  mesaLimpieza: {fileID: 0}
+--- !u!114 &276517228357479485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5196138454801411832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c02ad53e0ae88b4ab1a79ef2023f1fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoObjeto: Caja
 --- !u!1 &5572247125603412253
 GameObject:
   m_ObjectHideFlags: 0

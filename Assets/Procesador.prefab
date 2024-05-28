@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5446676452332448761}
   - component: {fileID: 5923992698222208079}
   - component: {fileID: 1078915628140872210}
+  - component: {fileID: 7407581081841352041}
   m_Layer: 0
   m_Name: Procesador
   m_TagString: Objeto
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   haSidoLimpiado: 0
+--- !u!114 &7407581081841352041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342640257312737431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c02ad53e0ae88b4ab1a79ef2023f1fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoObjeto: Procesador
