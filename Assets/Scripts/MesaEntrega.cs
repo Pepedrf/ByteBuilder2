@@ -24,12 +24,8 @@ public class MesaEntrega : MonoBehaviour
     {
         // Definir recetas disponibles
         recetas.Add(new List<string> { "Caja", "Procesador" });
-        recetas.Add(new List<string> { "Caja", "Grafica" });
         recetas.Add(new List<string> { "Caja", "ram" });
-        recetas.Add(new List<string> { "Caja", "Grafica", "ram" });
-        recetas.Add(new List<string> { "Caja", "Procesador", "Grafica" });
         recetas.Add(new List<string> { "Caja", "Procesador", "ram" });
-        recetas.Add(new List<string> { "Caja", "Procesador", "Grafica", "ram" });
 
         // Iniciar primera receta
         SeleccionarRecetaAleatoria();

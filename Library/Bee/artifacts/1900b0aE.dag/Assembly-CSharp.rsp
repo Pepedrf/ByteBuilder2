@@ -359,6 +359,7 @@
 "Assets/Scripts/CambiarNivel.cs"
 "Assets/Scripts/CogerObjeto.cs"
 "Assets/Scripts/Combinacion.cs"
+"Assets/Scripts/ControladorNiveles.cs"
 "Assets/Scripts/ControlObjeto.cs"
 "Assets/Scripts/IdentificarObjeto.cs"
 "Assets/Scripts/Jugador.cs"
