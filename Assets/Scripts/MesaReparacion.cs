@@ -31,7 +31,7 @@ public class MesaReparacion : MonoBehaviour
         objeto.transform.rotation = UbicacionObjeto.rotation;
         objeto.transform.SetParent(UbicacionObjeto);
 
-        float tiempoReparacion = 1f; // Tiempo de limpieza en segundos
+        float tiempoReparacion = 10f; // Tiempo de limpieza en segundos
         float tiempoTranscurrido = 0f;
 
         while (tiempoTranscurrido < tiempoReparacion)

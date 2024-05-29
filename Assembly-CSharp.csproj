@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9DF18F88-79E7-8EBF-2F05-CDB2425D2FE0}</ProjectGuid>
+    <ProjectGuid>{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Basura.cs" />
     <Compile Include="Assets\Scripts\MesaEntrega.cs" />
     <Compile Include="Assets\Scripts\Jugador.cs" />
+    <Compile Include="Assets\Scripts\IdentificarObjeto.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\MesaReparacion.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Jugador2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\Combinacion.cs" />
     <Compile Include="Assets\Scripts\ObjetoLimpieza.cs" />
     <Compile Include="Assets\Scripts\Caja.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />

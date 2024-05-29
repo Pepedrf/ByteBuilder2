@@ -31,7 +31,7 @@ public class MesaLimpieza : MonoBehaviour
         objeto.transform.rotation = UbicacionObjeto.rotation;
         objeto.transform.SetParent(UbicacionObjeto);
 
-        float tiempoLimpieza = 1f; // Tiempo de limpieza en segundos
+        float tiempoLimpieza = 5f; // Tiempo de limpieza en segundos
         float tiempoTranscurrido = 0f;
 
         while (tiempoTranscurrido < tiempoLimpieza)
