@@ -6,8 +6,8 @@ public class MesaEntrega : MonoBehaviour
 {
     public TextMeshProUGUI puntuacionText; // Referencia al objeto Text(TMP) en el Canvas
     public TextMeshProUGUI recetasSolicitadasText; // Referencia al objeto Text(TMP) para mostrar las recetas solicitadas
-    private int puntos = 0; // Variable para almacenar los puntos del jugador
-    private float intervaloReceta = 30f; // Intervalo en segundos para cambiar la receta
+    public int puntos = 0; // Variable para almacenar los puntos del jugador
+    private float intervaloReceta = 20f; // Intervalo en segundos para cambiar la receta
     private float tiempoTranscurridoReceta = 0f;
 
     // Lista de recetas solicitadas
@@ -49,14 +49,14 @@ public class MesaEntrega : MonoBehaviour
 
     private void SeleccionarRecetaAleatoria()
     {
-        // Seleccionar una receta aleatoria
-        recetaSeleccionada = recetas[Random.Range(0, recetas.Count)];
-
-        // Añadir la receta seleccionada a la lista de recetas solicitadas
-        recetasSolicitadas.Add(recetaSeleccionada);
-
-        // Actualizar el texto de las recetas solicitadas en la pantalla
-        ActualizarRecetasSolicitadasText();
+        // Verificar si la lista de recetas solicitadas ya tiene 4 recetas
+        if (recetasSolicitadas.Count < 4)
+        {
+            // Añadir una receta aleatoria a la lista
+            recetaSeleccionada = recetas[Random.Range(0, recetas.Count)];
+            recetasSolicitadas.Add(recetaSeleccionada);
+            ActualizarRecetasSolicitadasText();
+        }
     }
 
     private void ActualizarRecetasSolicitadasText()
@@ -102,7 +102,7 @@ public class MesaEntrega : MonoBehaviour
             if (CombinacionCoincide(receta, entregados))
             {
                 // Si la receta coincide, sumar puntos
-                puntos += 5 * entregados.Count; // Por ejemplo, 5 puntos por cada objeto entregado
+                puntos += 50 * entregados.Count; // Por ejemplo, 5 puntos por cada objeto entregado
                 ActualizarPuntuacion();
 
                 // Eliminar los objetos entregados

@@ -5,7 +5,7 @@ public class ControladorNiveles : MonoBehaviour
 {
     public static ControladorNiveles instancia;
     public Button[] botonesNiveles;
-    public int desbloquearNiveles;
+    public int desbloquearNiveles  ;
 
     private void Awake()
     {
@@ -17,6 +17,8 @@ public class ControladorNiveles : MonoBehaviour
 
     void Start()
     {
+        //Eliminar los niveles avanzados en el juego
+        //PlayerPrefs.DeleteKey("nivelesDesbloqueados");
         if (botonesNiveles.Length > 0)
         {
             //Ponemos todos los botones con el interactuar desactivado

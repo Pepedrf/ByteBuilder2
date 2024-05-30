@@ -49,7 +49,6 @@ public class MesaLimpieza : MonoBehaviour
     private void LimpiarCompletado(ObjetoLimpieza objetoLimpieza)
     {
         // Aquí puedes añadir la lógica que se ejecuta cuando el objeto ha sido limpiado
-        Debug.Log("Objeto limpiado: " + objetoActual.name);
         objetoActual.tag = "Objeto";
         objetoLimpieza.haSidoLimpiado = true; // Actualizar el booleano a true
         barraProgreso.ActualizarProgreso(0); // Resetear la barra de progreso

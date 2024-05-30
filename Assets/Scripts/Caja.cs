@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 public class Caja : MonoBehaviour
 {
@@ -45,7 +45,11 @@ public class Caja : MonoBehaviour
             Debug.Log("Antes debes limpiar el " + component.name);
             return;
         }
-
+        if (component.GetComponent<ObjetoReparacion>() != null && !component.GetComponent<ObjetoReparacion>().haSidoReparado)
+        {
+            Debug.Log("Antes debes reparar el " + component.name);
+            return;
+        }
         if (slotObject == null) // Verifica si el slot está libre
         {
             slotObject = component;

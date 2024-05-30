@@ -53,9 +53,6 @@ public class CogerObjeto : MonoBehaviour
                 // Obtener el bloque más cercano
                 bloqueCercano = bloqueMasCercano();
 
-                // Restaurar la rotación local original del brazo
-                dogArmRightTransform.localRotation = originalArmLocalRotation;
-
                 // Habilitar la gravedad y la física del objeto
                 Rigidbody pickedObjectRigidbody = pickedObject.GetComponent<Rigidbody>();
                 Collider collider = pickedObject.GetComponent<Collider>();
@@ -77,7 +74,8 @@ public class CogerObjeto : MonoBehaviour
                     // Si no hay un bloque cercano, soltar el objeto sin asignarle un padre
                     pickedObject.transform.SetParent(null);
                 }
-
+                // Restaurar la rotación local original del brazo
+                dogArmRightTransform.localRotation = originalArmLocalRotation;
                 pickedObject = null;
             }
         }
