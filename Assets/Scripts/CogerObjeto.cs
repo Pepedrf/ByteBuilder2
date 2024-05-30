@@ -5,7 +5,6 @@ using UnityEngine;
 public class CogerObjeto : MonoBehaviour
 {
     public GameObject UbicacionCoger; // Objeto que hereda del brazo del jugador
-
     public GameObject procesadorPrefab; // Prefab del objeto "procesador"
     public GameObject graficaPrefab; // Prefab del objeto "grafica"
     public GameObject cajaPrefab; // Prefab del objeto "Caja"
@@ -14,6 +13,7 @@ public class CogerObjeto : MonoBehaviour
 
     public Vector3 armRotationOffset = new Vector3(-77f, 9f, -22f); // Ajuste de la rotación del brazo
     private GameObject pickedObject = null;
+    private Vector3 originalScale; // Variable para almacenar la escala original del objeto
 
     private Transform dogArmRightTransform;
     private Quaternion originalArmLocalRotation; // Guardar la rotación local original del brazo
@@ -48,10 +48,8 @@ public class CogerObjeto : MonoBehaviour
         {
             if (Input.GetKey(soltar))
             {
-                GameObject bloqueCercano = null; // Asignar un valor predeterminado a la variable
-
                 // Obtener el bloque más cercano
-                bloqueCercano = bloqueMasCercano();
+                GameObject bloqueCercano = bloqueMasCercano();
 
                 // Habilitar la gravedad y la física del objeto
                 Rigidbody pickedObjectRigidbody = pickedObject.GetComponent<Rigidbody>();
@@ -74,6 +72,10 @@ public class CogerObjeto : MonoBehaviour
                     // Si no hay un bloque cercano, soltar el objeto sin asignarle un padre
                     pickedObject.transform.SetParent(null);
                 }
+
+                // Restaurar la escala original del objeto
+                pickedObject.transform.localScale = originalScale;
+
                 // Restaurar la rotación local original del brazo
                 dogArmRightTransform.localRotation = originalArmLocalRotation;
                 pickedObject = null;
@@ -83,7 +85,6 @@ public class CogerObjeto : MonoBehaviour
         {
             if (Input.GetKeyDown(agarrar))
             {
-
                 if (pickedObject == null && UbicacionCoger != null)
                 {
                     // Buscar objetos cercanos que se puedan recoger
@@ -95,6 +96,7 @@ public class CogerObjeto : MonoBehaviour
                         {
                             // Recoger el objeto cercano
                             pickedObject = col.gameObject;
+                            originalScale = pickedObject.transform.localScale; // Guardar la escala original
                             pickedObject.transform.SetParent(UbicacionCoger.transform);
                             pickedObject.transform.position = UbicacionCoger.transform.position;
 
@@ -113,69 +115,41 @@ public class CogerObjeto : MonoBehaviour
                         }
                     }
 
-                    // Si no se encontró ningún objeto cercano, instanciar uno nuevo en la UbicacionCoger
-                    if (pickedObject == null && nearChest)
+                    if (pickedObject == null)
                     {
-                        // Instanciar el objeto "procesador" en la posición de UbicacionCoger
-                        pickedObject = Instantiate(procesadorPrefab, UbicacionCoger.transform.position, Quaternion.identity);
-                        pickedObject.transform.SetParent(UbicacionCoger.transform);
+                        if (nearChest)
+                        {
+                            pickedObject = Instantiate(procesadorPrefab, UbicacionCoger.transform.position, Quaternion.identity);
+                        }
+                        else if (nearChest2)
+                        {
+                            pickedObject = Instantiate(graficaPrefab, UbicacionCoger.transform.position, Quaternion.identity);
+                        }
+                        else if (nearChest3)
+                        {
+                            pickedObject = Instantiate(cajaPrefab, UbicacionCoger.transform.position, Quaternion.identity);
+                        }
+                        else if (nearChest4)
+                        {
+                            pickedObject = Instantiate(ramPrefab, UbicacionCoger.transform.position, Quaternion.identity);
+                        }
 
-                        // Aplicar rotación fija al brazo
-                        dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
+                        if (pickedObject != null)
+                        {
+                            originalScale = pickedObject.transform.localScale; // Guardar la escala original
+                            pickedObject.transform.SetParent(UbicacionCoger.transform);
+                            dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
 
-                        // Desactivar la gravedad del objeto recogido
-                        Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
-                        Collider collider = pickedObject.GetComponent<Collider>();
-                        pickedRigidbody.useGravity = false;
-                        pickedRigidbody.isKinematic = true;
-                        collider.enabled = false;
-                    }
-
-                    // Si no se encontró ningún objeto cercano, instanciar uno nuevo en la UbicacionCoger
-                    else if (pickedObject == null && nearChest2)
-                    {
-                        pickedObject = Instantiate(graficaPrefab, UbicacionCoger.transform.position, Quaternion.identity);
-                        pickedObject.transform.SetParent(UbicacionCoger.transform);
-
-                        dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
-
-                        // Desactivar la gravedad del objeto recogido
-                        Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
-                        Collider collider = pickedObject.GetComponent<Collider>();
-                        pickedRigidbody.useGravity = false;
-                        pickedRigidbody.isKinematic = true;
-                        collider.enabled = false;
-                    }
-                    else if (pickedObject == null && nearChest3)
-                    {
-                        pickedObject = Instantiate(cajaPrefab, UbicacionCoger.transform.position, Quaternion.identity);
-                        pickedObject.transform.SetParent(UbicacionCoger.transform);
-
-                        dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
-
-                        // Desactivar la gravedad del objeto recogido
-                        Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
-                        Collider collider = pickedObject.GetComponent<Collider>();
-                        pickedRigidbody.useGravity = false;
-                        pickedRigidbody.isKinematic = true;
-                        collider.enabled = false;
-                    }
-                    else if (pickedObject == null && nearChest4)
-                    {
-                        pickedObject = Instantiate(ramPrefab, UbicacionCoger.transform.position, Quaternion.identity);
-                        pickedObject.transform.SetParent(UbicacionCoger.transform);
-
-                        dogArmRightTransform.localRotation = Quaternion.Euler(armRotationOffset);
-                        // Desactivar la gravedad del objeto recogido
-                        Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
-                        Collider collider = pickedObject.GetComponent<Collider>();
-                        pickedRigidbody.useGravity = false;
-                        pickedRigidbody.isKinematic = true;
-                        collider.enabled = false;
+                            // Desactivar la gravedad del objeto recogido
+                            Rigidbody pickedRigidbody = pickedObject.GetComponent<Rigidbody>();
+                            Collider collider = pickedObject.GetComponent<Collider>();
+                            pickedRigidbody.useGravity = false;
+                            pickedRigidbody.isKinematic = true;
+                            collider.enabled = false;
+                        }
                     }
                 }
             }
-
         }
     }
 
