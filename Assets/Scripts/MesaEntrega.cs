@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class MesaEntrega : MonoBehaviour
 {
     public TextMeshProUGUI puntuacionText; // Referencia al objeto Text(TMP) en el Canvas
+    public TextMeshProUGUI puntuacionFinal; // Referencia al objeto Text(TMP) en el Canvas
     public TextMeshProUGUI recetasSolicitadasText; // Referencia al objeto Text(TMP) para mostrar las recetas solicitadas
     public int puntos = 0; // Variable para almacenar los puntos del jugador
     private float intervaloReceta = 20f; // Intervalo en segundos para cambiar la receta
@@ -123,6 +124,7 @@ public class MesaEntrega : MonoBehaviour
     private void ActualizarPuntuacion()
     {
         puntuacionText.text = "Puntos: " + puntos;
+        puntuacionFinal.text = " "+puntos;
     }
 
     private bool CombinacionCoincide(List<string> combinacion, List<string> entregados)

@@ -1,20 +1,31 @@
 using TMPro;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Temporizador : MonoBehaviour
 {
     public TextMeshProUGUI Tiempo;
     public float cuenta = 0;
-    private MesaEntrega mesaEntrega; // Referencia al script MesaEntrega
+    private MesaEntrega mesaEntrega;
+    public GameObject canvasFinal;
+    public TextMeshProUGUI mensajePuntuacion;
+    public string nombreEscena;
+    float cuentaInicial;
 
     void Start()
     {
+        cuentaInicial = cuenta;
         // Buscar el objeto que tiene el script MesaEntrega y obtener la referencia
         mesaEntrega = FindObjectOfType<MesaEntrega>();
         if (mesaEntrega == null)
         {
             Debug.LogError("No se encontró un objeto con el script MesaEntrega.");
+        }
+
+        // Asegurarse de que el canvas final esté desactivado al inicio
+        if (canvasFinal != null)
+        {
+            canvasFinal.SetActive(false);
         }
     }
 
@@ -22,18 +33,35 @@ public class Temporizador : MonoBehaviour
     {
         cuenta -= Time.deltaTime;
 
-        Tiempo.text = "" + cuenta.ToString("f0"); // f0 es para que salga solo una décima
+        Tiempo.text = cuenta.ToString("f0"); // f0 es para que salga solo la parte entera
 
-        // Si el tiempo llega a 0, verificar la puntuación
+        // Si el tiempo llega a 0, mostrar el canvas final
         if (cuenta <= 0)
         {
             if (mesaEntrega != null && mesaEntrega.puntos >= 550)
             {
                 ControladorNiveles.instancia.AumentarNiveles();
             }
-            SceneManager.LoadScene("SelectorNiveles");
             cuenta = 0;
             Time.timeScale = 0;
+            canvasFinal.SetActive(true);
         }
     }
+
+    // Método para manejar el botón de volver al menú
+    public void VolverAlMenu()
+    {
+        Time.timeScale = 1;
+        cuenta = cuentaInicial;
+        SceneManager.LoadScene("SelectorNiveles");
+    }
+
+    // Método para manejar el botón de volver a jugar
+    public void VolverAJugar()
+    {
+        Time.timeScale = 1;
+        cuenta = cuentaInicial;
+        SceneManager.LoadScene("Scenes/Nivel 1");
+    }
+
 }
