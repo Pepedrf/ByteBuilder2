@@ -3,7 +3,14 @@ guid: fe9513bba37357b4791d986976fa8005
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - UbicacionCoger: {instanceID: 0}
+  - procesadorPrefab: {instanceID: 0}
+  - graficaPrefab: {instanceID: 0}
+  - cajaPrefab: {instanceID: 0}
+  - ramPrefab: {fileID: 919132149155446097, guid: 8bcc6f48cd24c464da56623631ef0ead, type: 3}
+  - brazo: {instanceID: 0}
+  - colorBloqueCercano: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

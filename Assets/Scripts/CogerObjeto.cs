@@ -7,7 +7,7 @@ public class CogerObjeto : MonoBehaviour
     public GameObject UbicacionCoger; // Objeto que hereda del brazo del jugador
     public GameObject procesadorPrefab; // Prefab del objeto "procesador"
     public GameObject graficaPrefab; // Prefab del objeto "grafica"
-    public GameObject cajaPrefab; // Prefab del objeto "Caja"
+    public GameObject cajaPrefab ; // Prefab del objeto "Caja"
     public GameObject ramPrefab; // Prefab del objeto "Ram"
     public GameObject brazo;
 
