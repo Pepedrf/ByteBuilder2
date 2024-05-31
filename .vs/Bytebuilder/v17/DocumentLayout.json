@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\cogerobjeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cogerobjeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CogerObjeto.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\CogerObjeto.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CogerObjeto.cs",
               "ToolTip": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\CogerObjeto.cs",
               "RelativeToolTip": "Assets\\Scripts\\CogerObjeto.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAA5wE0AAABOAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T12:14:30.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Temporizador.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\Temporizador.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Temporizador.cs",
@@ -76,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Caja.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T10:31:34.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T10:31:34.673Z"
             },
             {
               "$type": "Document",
@@ -89,8 +88,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ControladorNiveles.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwBMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T11:54:51.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T11:54:51.578Z"
             },
             {
               "$type": "Document",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MesaEntrega.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T08:26:41.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T08:26:41.082Z"
             },
             {
               "$type": "Document",
@@ -115,8 +112,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MesaLimpieza.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwDMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T09:55:00.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T09:55:00.1Z"
             },
             {
               "$type": "Document",
