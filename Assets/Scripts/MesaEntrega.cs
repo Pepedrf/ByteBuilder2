@@ -65,9 +65,40 @@ public class MesaEntrega : MonoBehaviour
         string recetasText = "Pedidos entrantes:\n";
         foreach (List<string> receta in recetasSolicitadas)
         {
-            recetasText += "- " + string.Join(", ", receta) + "\n";
+            recetasText += "- " + ObtenerTextoRecetaConColores(receta) + "\n";
         }
         recetasSolicitadasText.text = recetasText;
+    }
+
+    private string ObtenerTextoRecetaConColores(List<string> receta)
+    {
+        Dictionary<string, string> colorDict = new Dictionary<string, string>
+        {
+            { "Caja", "#000000" },       // Rojo
+            { "Grafica", "#00FF00" }, // Verde
+            { "Procesador", "#0000FF" },        // Azul
+            { "ram", "#FFFF00" }     // Amarillo
+        };
+
+        string textoConColores = "";
+        for (int i = 0; i < receta.Count; i++)
+        {
+            string palabra = receta[i];
+            string color;
+            if (colorDict.TryGetValue(palabra, out color))
+            {
+                textoConColores += $"<color={color}>{palabra}</color>";
+            }
+            else
+            {
+                textoConColores += palabra; // Si no se encuentra el color, dejar la palabra sin colorear
+            }
+            if (i < receta.Count - 1)
+            {
+                textoConColores += ", ";
+            }
+        }
+        return textoConColores;
     }
 
     private void Recursiva()
@@ -124,7 +155,7 @@ public class MesaEntrega : MonoBehaviour
     private void ActualizarPuntuacion()
     {
         puntuacionText.text = "Puntos: " + puntos;
-        puntuacionFinal.text = " "+puntos;
+        puntuacionFinal.text = " " + puntos;
     }
 
     private bool CombinacionCoincide(List<string> combinacion, List<string> entregados)
