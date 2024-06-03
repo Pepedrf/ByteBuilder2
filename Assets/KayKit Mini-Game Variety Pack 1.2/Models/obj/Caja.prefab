@@ -184,6 +184,8 @@ MonoBehaviour:
   UbicacionProcesador: {fileID: 2112991552034501573}
   UbicacionGrafica: {fileID: 7136554626566914528}
   UbicacionRam: {fileID: 5452954778683736046}
+  limpiarImagen: {fileID: 0}
+  repararImagen: {fileID: 0}
 --- !u!114 &276517228357479485
 MonoBehaviour:
   m_ObjectHideFlags: 0

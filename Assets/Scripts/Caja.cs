@@ -1,4 +1,6 @@
- using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class Caja : MonoBehaviour
 {
@@ -6,9 +8,28 @@ public class Caja : MonoBehaviour
     public Transform UbicacionGrafica;
     public Transform UbicacionRam;
 
+    private Image limpiarImagen; // Componente Image de la imagen de limpieza
+    private Image repararImagen; // Componente Image de la imagen de reparación
+
     private GameObject procesador;
     private GameObject grafica;
     private GameObject ram;
+
+    private void Start()
+    {
+        // Buscar y asignar las imágenes en la escena
+        limpiarImagen = GameObject.Find("LimpiarImagen").GetComponent<Image>();
+        repararImagen = GameObject.Find("RepararImagen").GetComponent<Image>();
+
+        if (limpiarImagen == null || repararImagen == null)
+        {
+            Debug.LogError("No se pudieron encontrar las imágenes. Asegúrate de que los nombres son correctos.");
+            return;
+        }
+
+        limpiarImagen.enabled = false; 
+        repararImagen.enabled = false;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -42,12 +63,12 @@ public class Caja : MonoBehaviour
     {
         if (component.GetComponent<ObjetoLimpieza>() != null && !component.GetComponent<ObjetoLimpieza>().haSidoLimpiado)
         {
-            Debug.Log("Antes debes limpiar el " + component.name);
+            StartCoroutine(ShowImage(limpiarImagen));
             return;
         }
         if (component.GetComponent<ObjetoReparacion>() != null && !component.GetComponent<ObjetoReparacion>().haSidoReparado)
         {
-            Debug.Log("Antes debes reparar el " + component.name);
+            StartCoroutine(ShowImage(repararImagen));
             return;
         }
         if (slotObject == null) // Verifica si el slot está libre
@@ -63,8 +84,12 @@ public class Caja : MonoBehaviour
         }
     }
 
-
-
+    private IEnumerator ShowImage(Image image)
+    {
+        image.enabled = true;
+        yield return new WaitForSeconds(2);
+        image.enabled = false;
+    }
 
     private void SetComponentPhysicsProperties(GameObject component)
     {
