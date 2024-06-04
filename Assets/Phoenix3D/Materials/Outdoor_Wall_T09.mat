@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Outdoor_Wall_T09
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: ea349c75f9ba79e4d94ba08f60989345, type: 2}
+  m_Parent: {fileID: 2100000, guid: e9665c59c972a0a49a933c2093023e13, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _NORMALMAP
