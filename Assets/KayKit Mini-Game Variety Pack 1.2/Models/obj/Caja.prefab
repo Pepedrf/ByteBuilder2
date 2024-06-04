@@ -184,8 +184,6 @@ MonoBehaviour:
   UbicacionProcesador: {fileID: 2112991552034501573}
   UbicacionGrafica: {fileID: 7136554626566914528}
   UbicacionRam: {fileID: 5452954778683736046}
-  limpiarImagen: {fileID: 0}
-  repararImagen: {fileID: 0}
 --- !u!114 &276517228357479485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 8150974973163834162}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -0.336, z: 0.008}
+  m_LocalPosition: {x: -0.91, y: -0.336, z: 0.008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
