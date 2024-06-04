@@ -25,8 +25,12 @@ public class MesaEntrega : MonoBehaviour
     {
         // Definir recetas disponibles
         recetas.Add(new List<string> { "Caja", "Procesador" });
-        recetas.Add(new List<string> { "Caja", "ram" });
-        recetas.Add(new List<string> { "Caja", "Procesador", "ram" });
+        recetas.Add(new List<string> { "Caja", "RAM" });
+        recetas.Add(new List<string> { "Caja", "Grafica" });
+        recetas.Add(new List<string> { "Caja", "RAM", "Grafica" });
+        recetas.Add(new List<string> { "Caja", "RAM", "Procesador" });
+        recetas.Add(new List<string> { "Caja", "Procesador", "Grafica" });
+        recetas.Add(new List<string> { "Caja", "RAM", "Procesador", "Grafica"});
 
         // Iniciar primera receta
         SeleccionarRecetaAleatoria();
@@ -62,7 +66,7 @@ public class MesaEntrega : MonoBehaviour
 
     private void ActualizarRecetasSolicitadasText()
     {
-        string recetasText = "Pedidos entrantes:\n";
+        string recetasText = "PEDIDOS ENTRANTES:\n";
         foreach (List<string> receta in recetasSolicitadas)
         {
             recetasText += "- " + ObtenerTextoRecetaConColores(receta) + "\n";
@@ -75,9 +79,9 @@ public class MesaEntrega : MonoBehaviour
         Dictionary<string, string> colorDict = new Dictionary<string, string>
         {
             { "Caja", "#000000" },       // Rojo
-            { "Grafica", "#00FF00" }, // Verde
-            { "Procesador", "#0000FF" },        // Azul
-            { "ram", "#FFFF00" }     // Amarillo
+            { "Grafica", "#1ee729" }, // Verde
+            { "Procesador", "#397ff2" },        // Azul
+            { "RAM", "#ffaf32" }     // Amarillo
         };
 
         string textoConColores = "";

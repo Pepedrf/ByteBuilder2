@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\tutorialcanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\tutorialcanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|c:\\users\\jose.d\\desktop\\bytebuilder\\assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\mesaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB1B808-2B6B-0E46-EC3C-5D9D702FD307}|Assembly-CSharp.csproj|C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\assets\\scripts\\cogerobjeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,19 +51,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TutorialCanvas.cs",
+              "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\TutorialCanvas.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TutorialCanvas.cs",
+              "ToolTip": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\TutorialCanvas.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TutorialCanvas.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowEEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:33:21.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
               "ToolTip": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\PauseMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAvAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwDEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T11:41:14.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T11:41:14.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CogerObjeto.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\CogerObjeto.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CogerObjeto.cs",
@@ -71,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Temporizador.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\Temporizador.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Temporizador.cs",
@@ -79,12 +95,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Temporizador.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwCYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T10:46:52.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T10:46:52.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Caja.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\Caja.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Caja.cs",
@@ -114,13 +129,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MesaEntrega.cs",
               "ToolTip": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\MesaEntrega.cs",
               "RelativeToolTip": "Assets\\Scripts\\MesaEntrega.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAwwAcAAAAqAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAmwFMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T08:26:41.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MesaLimpieza.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\MesaLimpieza.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MesaLimpieza.cs",
@@ -132,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MesaReparacion.cs",
               "DocumentMoniker": "C:\\Users\\Jose.D\\Desktop\\Bytebuilder\\Assets\\Scripts\\MesaReparacion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MesaReparacion.cs",
