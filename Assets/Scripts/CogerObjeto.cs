@@ -24,6 +24,7 @@ public class CogerObjeto : MonoBehaviour
     private bool nearChest4 = false;
 
     public float radioBusqueda = 5f; // Radio de búsqueda para encontrar bloques cercanos
+    float radiochoque = 0.5f;
     public Material colorBloqueCercano; // Material para el bloque más cercano
     public KeyCode agarrar;
     public KeyCode soltar;
@@ -43,6 +44,49 @@ public class CogerObjeto : MonoBehaviour
     void Update()
     {
         bloqueCercano();
+
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, radiochoque);
+        foreach (Collider col in hitColliders)
+        {
+            if (col.CompareTag("Bola"))
+            {
+                if (pickedObject != null)
+                {
+                    // Obtener el bloque más cercano
+                    GameObject bloqueCercano = bloqueMasCercano();
+
+                    // Habilitar la gravedad y la física del objeto
+                    Rigidbody pickedObjectRigidbody = pickedObject.GetComponent<Rigidbody>();
+                    Collider collider = pickedObject.GetComponent<Collider>();
+                    pickedObjectRigidbody.useGravity = true;
+                    pickedObjectRigidbody.isKinematic = false;
+                    collider.enabled = true;
+
+                    // Si hay un bloque cercano, hacer que el objeto suelto sea hijo de ese bloque
+                    if (bloqueCercano != null)
+                    {
+                        pickedObject.transform.SetParent(bloqueCercano.transform);
+                        // Ajustar la posición del objeto
+                        Vector3 newPos = bloqueCercano.transform.position;
+                        newPos.y += 1;
+                        pickedObject.transform.position = newPos;
+                    }
+                    else
+                    {
+                        // Si no hay un bloque cercano, soltar el objeto sin asignarle un padre
+                        pickedObject.transform.SetParent(null);
+                    }
+
+                    // Restaurar la escala original del objeto
+                    pickedObject.transform.localScale = originalScale;
+
+                    // Restaurar la rotación local original del brazo
+                    dogArmRightTransform.localRotation = originalArmLocalRotation;
+                    pickedObject = null;
+                }
+            }
+        }
+
 
         if (pickedObject != null)
         {

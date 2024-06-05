@@ -15,6 +15,7 @@ TagManager:
   - Reparado
   - LimiteDerecho
   - LimiteIzquierdo
+  - Bola
   layers:
   - Default
   - TransparentFX
