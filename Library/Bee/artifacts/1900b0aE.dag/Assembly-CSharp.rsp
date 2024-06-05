@@ -364,6 +364,7 @@
 "Assets/asoliddev - Car Maker/Scripts/CarMaker.cs"
 "Assets/asoliddev - Car Maker/Scripts/CarSettings.cs"
 "Assets/asoliddev - Car Maker/Scripts/WheelAxle.cs"
+"Assets/ElevacionPared.cs"
 "Assets/MovimientoEsfera.cs"
 "Assets/Scripts/armario.cs"
 "Assets/Scripts/BarraProgreso.cs"
