@@ -145,30 +145,24 @@ ScriptsOnlyBuild:
     fullTypeName: CambiarNivel
     methodName: CambiarEscena
   - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
   - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    methodName: OnIncrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    methodName: OnIncrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
     methodName: OnDecrement
   - assembly: Unity.RenderPipelines.Core.Runtime
@@ -180,6 +174,12 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
     methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
+    methodName: OnIncrement
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
@@ -386,33 +386,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7372}
     - Class: 114
-      Script: {instanceID: 7520}
+      Script: {instanceID: 7518}
     - Class: 114
-      Script: {instanceID: 7564}
+      Script: {instanceID: 7562}
     - Class: 114
-      Script: {instanceID: 7622}
+      Script: {instanceID: 7620}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7722}
+      Script: {instanceID: 7720}
     - Class: 114
-      Script: {instanceID: 7848}
+      Script: {instanceID: 7846}
     - Class: 114
-      Script: {instanceID: 8024}
+      Script: {instanceID: 8022}
     - Class: 114
-      Script: {instanceID: 8164}
+      Script: {instanceID: 8160}
     - Class: 114
-      Script: {instanceID: 8210}
+      Script: {instanceID: 8206}
     - Class: 114
-      Script: {instanceID: 8242}
+      Script: {instanceID: 8238}
     - Class: 114
-      Script: {instanceID: 8628}
+      Script: {instanceID: 8624}
     - Class: 114
-      Script: {instanceID: 9426}
+      Script: {instanceID: 9420}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 9482}
     - Class: 114
-      Script: {instanceID: 9768}
+      Script: {instanceID: 9758}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -511,11 +511,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7952}
+      Script: {instanceID: 7950}
     - Class: 114
-      Script: {instanceID: 8020}
+      Script: {instanceID: 8018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -614,11 +614,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7952}
+      Script: {instanceID: 7950}
     - Class: 114
-      Script: {instanceID: 8020}
+      Script: {instanceID: 8018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -719,11 +719,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7952}
+      Script: {instanceID: 7950}
     - Class: 114
-      Script: {instanceID: 8020}
+      Script: {instanceID: 8018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -824,11 +824,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7952}
+      Script: {instanceID: 7950}
     - Class: 114
-      Script: {instanceID: 8020}
+      Script: {instanceID: 8018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -929,11 +929,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7952}
+      Script: {instanceID: 7950}
     - Class: 114
-      Script: {instanceID: 8020}
+      Script: {instanceID: 8018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -998,9 +998,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7282}
     - Class: 114
-      Script: {instanceID: 7706}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 9482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

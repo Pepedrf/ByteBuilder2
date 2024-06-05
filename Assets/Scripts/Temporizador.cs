@@ -38,7 +38,7 @@ public class Temporizador : MonoBehaviour
         // Si el tiempo llega a 0, mostrar el canvas final
         if (cuenta <= 0)
         {
-            if (mesaEntrega != null && mesaEntrega.puntos >= 550)
+            if (mesaEntrega != null && mesaEntrega.puntos >= 400)
             {
                 ControladorNiveles.instancia.AumentarNiveles();
             }
