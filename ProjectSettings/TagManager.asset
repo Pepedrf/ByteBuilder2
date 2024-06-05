@@ -13,6 +13,8 @@ TagManager:
   - Entregado
   - Limpiando
   - Reparado
+  - LimiteDerecho
+  - LimiteIzquierdo
   layers:
   - Default
   - TransparentFX
