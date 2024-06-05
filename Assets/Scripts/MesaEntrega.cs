@@ -81,7 +81,7 @@ public class MesaEntrega : MonoBehaviour
             { "Caja", "#000000" },       // Rojo
             { "Grafica", "#1ee729" }, // Verde
             { "Procesador", "#397ff2" },        // Azul
-            { "RAM", "#ffaf32" }     // Amarillo
+            { "RAM", "#FF0000" }     // Amarillo
         };
 
         string textoConColores = "";

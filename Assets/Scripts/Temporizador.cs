@@ -9,7 +9,7 @@ public class Temporizador : MonoBehaviour
     private MesaEntrega mesaEntrega;
     public GameObject canvasFinal;
     public TextMeshProUGUI mensajePuntuacion;
-    public string nombreEscena;
+    public string nombreEscena; // Esta variable será configurable desde el Inspector
     float cuentaInicial;
 
     void Start()
@@ -61,7 +61,7 @@ public class Temporizador : MonoBehaviour
     {
         Time.timeScale = 1;
         cuenta = cuentaInicial;
-        SceneManager.LoadScene("Scenes/Nivel 1");
+        // Usar el nombre de la escena que se ha configurado en el Inspector
+        SceneManager.LoadScene(nombreEscena);
     }
-
 }

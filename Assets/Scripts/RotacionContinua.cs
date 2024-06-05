@@ -19,6 +19,7 @@ public class RotacionContinua : MonoBehaviour
             rotandoPositivo = !rotandoPositivo;
             // Reiniciar el temporizador
             tiempoTranscurrido = 0f;
+            velocidadRotacion = velocidadRotacion + 10;
         }
 
         // Calcular la dirección de rotación actual

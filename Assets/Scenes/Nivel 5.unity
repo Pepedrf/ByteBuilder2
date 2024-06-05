@@ -1308,7 +1308,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.98522234, b: 0.9669811, a: 1}
-  m_Intensity: 10
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2073,8 +2073,8 @@ Transform:
   m_GameObject: {fileID: 273143623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.786, y: -3.62, z: -0.5}
-  m_LocalScale: {x: 1, y: 0.2, z: 0.099999994}
+  m_LocalPosition: {x: -0.786, y: -0.72, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 0.099999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 331417916}
@@ -4249,8 +4249,8 @@ Transform:
   m_GameObject: {fileID: 583304060}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.6889997, y: -3.62, z: 4.01}
-  m_LocalScale: {x: 0.7500001, y: 0.2, z: 0.10000001}
+  m_LocalPosition: {x: 5.6889997, y: -0.72, z: 4.01}
+  m_LocalScale: {x: 0.7500001, y: 1, z: 0.10000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 331417916}
@@ -4571,11 +4571,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48344594
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.267
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5328,7 +5328,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -4973734387028869240, guid: e47993eb3b664ad42b0cca9afd9b4575, type: 3}
-  - {fileID: 2100000, guid: e530e2aa3405b614691536421f6b5315, type: 2}
+  - {fileID: 2100000, guid: 3a0ae63a5946a7c48a62da45200ff55b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7150,7 +7150,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.98522234, b: 0.9669811, a: 1}
-  m_Intensity: 10
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9087,8 +9087,8 @@ Transform:
   m_GameObject: {fileID: 1383034464}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.786, y: -3.62, z: 8.478}
-  m_LocalScale: {x: 1, y: 0.2, z: 0.099999994}
+  m_LocalPosition: {x: -0.786, y: -0.72, z: 8.478}
+  m_LocalScale: {x: 1, y: 1, z: 0.099999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 331417916}
@@ -9204,7 +9204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2df5daf6b608f1c42b2261c34962cf10, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af82e6e3458cf1240a75be3d7ab77db6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9501,7 +9501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botonesNiveles: []
-  desbloquearNiveles: 3
+  desbloquearNiveles: 5
 --- !u!4 &1454204309
 Transform:
   m_ObjectHideFlags: 0
@@ -11547,11 +11547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48344594
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.267
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e15c399cb1090f94a8336adfb0dea459, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11809,7 +11809,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 797aa482f185ebd42ba4f8c194f5a9af, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e530e2aa3405b614691536421f6b5315, type: 2}
+      objectReference: {fileID: 2100000, guid: 3a0ae63a5946a7c48a62da45200ff55b, type: 2}
     - target: {fileID: -7635826562936255635, guid: 797aa482f185ebd42ba4f8c194f5a9af, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -12507,7 +12507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f40bfca6bb1d3344aaf7002307f643dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8127b6cdb9411244bfdadeb877e2555, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13077,7 +13077,7 @@ MonoBehaviour:
   cuenta: 180
   canvasFinal: {fileID: 1499424960}
   mensajePuntuacion: {fileID: 1458048156}
-  nombreEscena: Nivel 1
+  nombreEscena: Nivel 5
 --- !u!4 &2022068087
 Transform:
   m_ObjectHideFlags: 0
@@ -13525,8 +13525,8 @@ Transform:
   m_GameObject: {fileID: 2111559493}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.27, y: -3.62, z: 4.01}
-  m_LocalScale: {x: 0.7500001, y: 0.2, z: 0.10000001}
+  m_LocalPosition: {x: -7.27, y: -0.72, z: 4.01}
+  m_LocalScale: {x: 0.7500001, y: 1, z: 0.10000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 331417916}
